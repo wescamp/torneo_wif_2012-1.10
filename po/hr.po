@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: torneo_wif_2012-1.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-23 02:23+0200\n"
+"POT-Creation-Date: 2012-10-12 18:45-0400\n"
 "PO-Revision-Date: 2012-09-23 02:23+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -14,66 +14,81 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. [multiplayer]: id=torneo_wif_2012
-#: torneo_wif_2012/torneo_wif_2012.cfg:6
+#: torneo_wif_2012/torneo_wif_2012.cfg:5
 msgid "Tournament W.I.F. 2012 (by Dret)"
 msgstr ""
 
 #. [side]: type=Silver Mage
-#: torneo_wif_2012/torneo_wif_2012.cfg:26
+#: torneo_wif_2012/torneo_wif_2012.cfg:19
 msgid "good"
 msgstr ""
 
 #. [side]: type=Silver Mage
-#: torneo_wif_2012/torneo_wif_2012.cfg:49
+#: torneo_wif_2012/torneo_wif_2012.cfg:42
 msgid "evil"
 msgstr ""
 
 #. [multiplayer]: id=torneo_wif_2012
-#: torneo_wif_2012/torneo_wif_2012.cfg:133
+#: torneo_wif_2012/torneo_wif_2012.cfg:74
 msgid "Dimensional Vortex"
 msgstr ""
 
 #. [multiplayer]: id=torneo_wif_2012
-#: torneo_wif_2012/torneo_wif_2012.cfg:155
+#: torneo_wif_2012/torneo_wif_2012.cfg:94
 msgid "Magic Source"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:190
+#: torneo_wif_2012/torneo_wif_2012.cfg:109
 msgid "<span foreground='green'>Tactical Victory</span>"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:191
+#: torneo_wif_2012/torneo_wif_2012.cfg:110
 msgid ""
 "\n"
-"<big>WINNER IS <span foreground='green'>$varWinnerName</span></big>\n"
+"<big>WINNER IS <span foreground='green'>$winner_side.name</span></big>\n"
 " \n"
-"<span foreground='orange'>$varWinnerName owns all six magic sources</span>"
+"<span foreground='orange'>$winner_side.name owns all six magic sources</span>"
 msgstr ""
 
 #. [unstore_unit]
-#: torneo_wif_2012/torneo_wif_2012.cfg:455
+#: torneo_wif_2012/torneo_wif_2012.cfg:371
 msgid "Blink!"
 msgstr ""
 
 #. [objectives]
-#: torneo_wif_2012/torneo_wif_2012.cfg:573
+#: torneo_wif_2012/torneo_wif_2012.cfg:479
 msgid "WIF Tournament 2012"
 msgstr ""
 
 #. [objective]: condition=win
-#: torneo_wif_2012/torneo_wif_2012.cfg:575
-msgid "Defeat your opponent or conquer the 6 magic Sources!"
+#: torneo_wif_2012/torneo_wif_2012.cfg:481
+msgid "Defeat your opponent"
+msgstr ""
+
+#. [objective]: condition=win
+#: torneo_wif_2012/torneo_wif_2012.cfg:485
+msgid "<big>Tactical victory:</big>"
+msgstr ""
+
+#. [objective]: condition=win
+#: torneo_wif_2012/torneo_wif_2012.cfg:486
+msgid "Conquer the 6 magic Sources"
+msgstr ""
+
+#. [objective]: condition=lose
+#: torneo_wif_2012/torneo_wif_2012.cfg:490
+msgid "Defeat of your leader"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:594
+#: torneo_wif_2012/torneo_wif_2012.cfg:497
 msgid "CAUTION!! Before starting playing: "
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:595
+#: torneo_wif_2012/torneo_wif_2012.cfg:498
 msgid ""
 "\n"
 "<span foreground='red'>DID YOU SET THE GAME CORRECTLY?</span>\n"
@@ -85,22 +100,22 @@ msgid ""
 "'Show Haloing Effects' (in Display Preferences) MUST BE ENABLED\n"
 " \n"
 "'Observers' MUST BE DISABLED (with the exception expected in the rules, "
-"avaiable in the dedicated post in our forum)\n"
+"available in the dedicated post in our forum)\n"
 " \n"
 "                   OTHERWISE                       \n"
-"            THE GAME WILL BE ANNULED</big>"
+"            THE GAME WILL BE ANNULLED</big>"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:615
-msgid "         VI° Tournament W.I.F. 2012"
+#: torneo_wif_2012/torneo_wif_2012.cfg:518
+msgid "         VI Tournament W.I.F. 2012"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:616
+#: torneo_wif_2012/torneo_wif_2012.cfg:519
 msgid ""
-" \n"
-"<big>                    VI° Italian Tournament \n"
+"\n"
+"<big>                    VI Italian Tournament \n"
 "                     of Battle for Wesnoth</big>\n"
 " \n"
 "                                  organized by:\n"
@@ -110,56 +125,56 @@ msgid ""
 "                 http://wif.altervista.org\n"
 " \n"
 " Map designer and original scenario coder: Dret\n"
-" WML enhancers and bug fixers: Elvish Hunter, mich and Nobun\n"
+" WML enhancers and bug fixers: mich, Nobun and Elvish_Hunter\n"
 " Testers: Dead Eye, Luigit and baro_st\n"
 " Translator: RockScorpion</big>\n"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:636
-msgid "ISTRUCTIONS - Dimensional Vortices"
+#: torneo_wif_2012/torneo_wif_2012.cfg:540
+msgid "INSTRUCTIONS - Dimensional Vortexes"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:637
+#: torneo_wif_2012/torneo_wif_2012.cfg:541
 msgid ""
-" \n"
+"\n"
 "<big> REMEMBER:\n"
-" from turn 3 the DIMENSIONAL VORTICES will be open.\n"
+" from turn 3 the DIMENSIONAL VORTEXES will be open.\n"
 " They allow the quick shift to the other side of the map.\n"
 " So you can point more easily to the TACTICAL VICTORY.\n"
-" CAUTION: vortices will open first for the player\n"
+" CAUTION: vortexes will open first for the player\n"
 " number two; in this way the disadvantage of \n"
 " starting the game for second is balanced.\n"
 " If a unit after a teleporting movement, for missing \n"
-" space in the destination area, ends in a 'chasm' \n"
-" terrain and can't fly... it will be slained!</big>\n"
+" space in the destination area, ends in a <i>chasm</i> \n"
+" terrain and can't fly... it will be slain!</big>\n"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:655
-msgid "ISTRUCTIONS - Tactical Victory"
+#: torneo_wif_2012/torneo_wif_2012.cfg:559
+msgid "INSTRUCTIONS - Tactical Victory"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:656
+#: torneo_wif_2012/torneo_wif_2012.cfg:560
 msgid ""
-" \n"
+"\n"
 "<big> REMEMBER:\n"
-" You can win the game without kill the enemy leader\n"
+" You can win the game without killing the enemy leader\n"
 " if you occupy all the 6 MAGIC SOURCES\n"
 " on the map.</big>\n"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:668
-msgid "ISTRUCTIONS - Elite Units"
+#: torneo_wif_2012/torneo_wif_2012.cfg:572
+msgid "INSTRUCTIONS - Elite Units"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: torneo_wif_2012/torneo_wif_2012.cfg:669
+#: torneo_wif_2012/torneo_wif_2012.cfg:573
 msgid ""
-" \n"
+"\n"
 "<big> REMEMBER:\n"
 " The units that you see already positioned on the map are unique \n"
 " and SO UNRECRUITABLE. They are powerful units and represent\n"
@@ -167,6 +182,6 @@ msgid ""
 msgstr ""
 
 #. [print]
-#: torneo_wif_2012/torneo_wif_2012.cfg:696
-msgid "The Dimensional Vortices are open!"
+#: torneo_wif_2012/torneo_wif_2012.cfg:594
+msgid "The Dimensional Vortexes are open!"
 msgstr ""
